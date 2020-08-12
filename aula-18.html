@@ -15,7 +15,7 @@
     <div class="js">typescript</div>
     <div class="js">es6</div>
 
-    
+
 </body>
 
 <script>
@@ -24,14 +24,96 @@
     // quando a variavel ja esta declarada, quando ela é chamada no console.log, nao precisa de aspas, somente o nome da variavel o a propriedade atribuida para retorno.
     //console.log(js.length); // lenght - é a propriedade de um objeto String representa o comprimento de uma string no codigo UTF-16.
 
+    //-- -- -- -- -- -- -- -- --
+    //FOR
     // () parenteses, onde vai a condição.
     //let variavel de escopo local 
     // i de index ou indice
-    for (let i = 0; i < js.length; i++) {
-        //console.log(i); faz a contagem dos elementos de indice que estao listados em classes no dom...que é iniciado pelo numero "0"
-        // console.log(js[i]) // retorna cada indice do html 
+    //for (let i = 0; i < js.length; i++) {
+    //console.log(i); faz a contagem dos elementos de indice que estao listados em classes no dom...que é iniciado pelo numero "0"
+    // console.log(js[i]) // retorna cada indice do html  no console.
 
+    //let texto = js[i].innerHTML; // retorna todos os valores das classes "js"
+    //console.log(texto)
+
+    //js[i].innerHTML = 'curso ' + texto + ' js';
+    //console.log(texto); // o objetivo deste laço de repetição Loop, é inserir antes e depois da classe a palavra 'Curso' e depois a palavra 'js'. isso en todos os arrays do laço de repetição.
+
+    // o 'for' ele acessa tanto um html colection quanto um array de verdade.
+    // }
+
+    //var array = [1, 2, 3, 4]; // Prototype Array
+    //console.log(js, array);
+
+    // a variavel js que é retornada no console tem um prototype descrito como 'HTMLCollection' por isso ele retorna uma coleção de HTML - este array só tem Html dentro.
+
+    //já a variavel array que é retornada no console é um prototype Array que é um array de verdade..Aqui voce consegue inserir quaquer valor.
+
+    // ------------------------------------------------
+    //o forEach não retorna valores prototype htmlCollection só retorna Array de verdade.
+
+    //EX
+    //array.forEach(function(a, i) {
+    //console.log(a, i);
+    //}) // neste caso ele retornao array no console, pois a variavel Array e de prototype Array
+
+    // js.forEach(function(a, i) {
+    //console.log(a, i);
+    //}) //Elenão consegue percorrer, pois não é um array de verdade.
+
+
+    var array = [1, 2, 'b', 4]; // entre [] colchetes ficam os elementos do Array
+
+    // A função recebe 2 parametros, uma é os elementos listados dentro do array e a outra é o indice que é atribuido ao tamanho do array.
+    // array.forEach(function(element, index) {
+    //console.log(element, index);
+    //})
+
+
+    //Alterando os valores do elemento
+    // array.forEach(function(element, index) {
+    //if (element === 1) {
+    //    array[index] = 'outra coisa'
+    // }
+    // })
+    // console.log(array);
+
+    //----------------------------------------------------------------
+    //MAP - ele mapeia o array ja existente e voce pode alterar o valores ja existente em outros valores.
+    //O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
+    var nova = array.map(function(element, index) {
+        if (element === 1) {
+            element = 'outra coisa do map';
+        }
+        return element
+    })
+    console.log(nova);
+
+
+    var nomeDoArray = 'marlon';
+
+    [].map.call(nomeDoArray, function(nomeDaFuncao) {
+        return nomeDaFuncao;
+    }).reverse().join('');
+
+    console.log(nomeDoArray);
+
+    var myArray = ['one', 'two', 'three'];
+    myArray.reverse();
+
+    console.log(myArray) // ['three', 'two', 'one']
+
+    var numbers = [1, 4, 9];
+    var doubles = numbers.map(function(num) {
+        return num * 2;
+    });
+    console.log(doubles);
+
+    function reverseString(str) {
+        return str;
     }
+    reverseString("hello");
 </script>
+
 
 </html>
