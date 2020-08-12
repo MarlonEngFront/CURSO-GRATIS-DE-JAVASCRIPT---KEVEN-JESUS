@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula-18-Loops - for, forEach, map e while</title>
 </head>
+
 <body>
 
     <div class="js">react</div>
     <div class="js">angular</div>
     <div class="js">typescript</div>
     <div class="js">es6</div>
-    
+
 </body>
 
 <script>
+    var js = document.getElementsByClassName('js');
 
-var js = document.getElementsByClassName('js');
+    // quando a variavel ja esta declarada, quando ela é chamada no console.log, nao precisa de aspas, somente o nome da variavel o a propriedade atribuida para retorno.
+    //console.log(js.length); // lenght - é a propriedade de um objeto String representa o comprimento de uma string no codigo UTF-16.
 
-// quando a variavel ja esta declarada, quando ela é chamada no console.log, nao precisa de aspas, somente o nome da variavel o a propriedade atribuida para retorno.
-//console.log(js.length); // lenght - é a propriedade de um objeto String representa o comprimento de uma string no codigo UTF-16.
+    // () parenteses, onde vai a condição.
+    //let variavel de escopo local 
+    // i de index ou indice
+    for (let i = 0; i < js.length; i++) {
+        //console.log(i); faz a contagem dos elementos de indice que estao listados em classes no dom...que é iniciado pelo numero "0"
+        // console.log(js[i]) // retorna cada indice do html 
 
-
-
-// () parenteses, onde vai a condição.
-//let variavel de escopo local 
-// i de index ou indice
-for(let i = 0; i < js.length; i++ ){
-    //console.log(i); faz a contagem dos elementos de indice que estao listados em classes no dom...que é iniciado pelo numero "0"
-   // console.log(js[i]) // retorna cada indice do html 
-
-}
-
-
+    }
 </script>
+
 </html>
