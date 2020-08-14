@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aula-19-funções</title>
 </head>
+
 <body>
-    
+    <p>funções</p>
+    <p>um grupo de comandos, responsabilidades</p>
+    <p>um função pode ou nao retornar auguma coisa</p>
+    <p>pode fazer ou altera alguma coisa</p>
+
+
 </body>
 
-<script></script>
+<script>
+    //estrutura simples de uma função
+    function nomedaFuncao(valor) {
+        return valor;
+    }
+
+    function adicao(soma1, soma2) {
+        return soma1 + soma2;
+    }
+
+    function subtracao(menos) {
+        return --menos;
+    }
+
+    function calculaMedia(n1, n2, n3) {
+        return (n1 + n2 + n3) / 3;
+    }
+
+    //função que não retorna nada
+
+    //objeto pessoa
+    var pessoa = {
+        nome: "Marlon",
+        idade: 34,
+        profissao: "DevFront",
+        cidade: "Sp"
+    }
+
+    //função altera objeto pessoa
+    //function novaPessoa(nome, idade, profissao, cidade) {
+    // pessoa.nome = nome;
+    //  pessoa.idade = idade;
+    //  pessoa.profissao = profissao;
+    //  pessoa.cidade = cidade;
+    // }
+
+
+    //função altera objeto pessoa com um novo objeto.
+    // function novaPessoa(novoObjetoPessoa) {
+    //   pessoa = novoObjetoPessoa;
+    //   return novoObjetoPessoa; //retorna o objeto logo depois de alterado
+    //  }
+
+
+    function novaPessoa(novoObjetoPessoa) {
+
+        if (typeof novoObjetoPessoa == 'object') {
+            pessoa = novoObjetoPessoa;
+            return true;
+        } else {
+            false
+        }
+    }
+
+
+    function testeparametros() {
+        console.log(arguments[5]);
+    }
+</script>
+
 </html>
