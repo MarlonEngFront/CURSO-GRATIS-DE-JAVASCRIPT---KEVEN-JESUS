@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula23 - eventos - Change</title>
+</head>
+<body>
+    <select id="linguagens">
+        <option value="1">php</option>
+        <option value="2">javascript</option>
+        <option value="3">java</option>
+        <option value="4">c#</option>
+    </select>
+
+    <script>
+
+  var linguagens = document.getElementById("linguagens");
+
+  linguagens.addEventListener("change", function(){
+
+      console.log(this);
+        })
+
+    </script>
+    
+</body>
+</html>

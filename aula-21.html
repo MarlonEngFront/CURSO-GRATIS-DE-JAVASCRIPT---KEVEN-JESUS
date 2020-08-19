@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-21-eventos</title>
+</head>
+<body>
+    <h4 id="title">Meu botão</h4>
+    <button id="btn">click</button>
+    <button id="remove">remove</button>
+    
+</body>
+<script>
+var botao = document.getElementById("btn");
+//console.log(botao); saber se esta retornando o botao no console
+
+var remover = document.getElementById('remove')
+
+var tittle = document.getElementById('title');
+botao.addEventListener('click',function () {
+    //console.log("click");
+    alert('o botão foi clicado');
+})
+
+//remover titulo do h4
+remover.addEventListener('click',function () {
+  tittle.remove();
+})
+
+
+//sintaxe do evendo click
+
+// >   elemento.adicionarevento('nome do evento', função que executa pos evento)
+
+</script>
+</html>
